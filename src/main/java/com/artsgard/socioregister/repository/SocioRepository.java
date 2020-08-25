@@ -3,7 +3,6 @@ package com.artsgard.socioregister.repository;
 import com.artsgard.socioregister.mock.SocioMock;
 import com.artsgard.socioregister.model.SocioModel;
 import com.artsgard.socioregister.service.MapperService;
-import java.sql.Timestamp;
 import java.util.List;
 import java.util.Objects;
 import org.springframework.beans.factory.annotation.Autowired;

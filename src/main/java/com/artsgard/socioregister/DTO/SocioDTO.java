@@ -46,17 +46,13 @@ public class SocioDTO implements Serializable {
     @NotNull
     @Size(min = 2, max = 20)
     private String username;
-    
     private String firstName;
-    
     private String lastName;
     
     @NotEmpty
     @NotNull
     @Size(min = 2, max = 20)
     private String email;
-    
     private Timestamp registerDate;
-   
     private Boolean active;
 }

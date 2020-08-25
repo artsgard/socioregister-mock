@@ -36,16 +36,10 @@ public class SocioModel implements Serializable {
     }
 
     private Long id;
-    
     private String username;
-    
     private String firstName;
-
     private String lastName;
-    
     private String email;
-    
     private Timestamp registerDate;
-   
     private Boolean active;
 }
