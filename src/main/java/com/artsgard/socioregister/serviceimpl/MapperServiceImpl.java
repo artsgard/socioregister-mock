@@ -2,11 +2,9 @@ package com.artsgard.socioregister.serviceimpl;
 
 import com.artsgard.socioregister.service.MapperService;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.artsgard.socioregister.DTO.SocioDTO;
 import com.artsgard.socioregister.model.SocioModel;
-import com.artsgard.socioregister.service.SocioService;
 import org.slf4j.LoggerFactory;
 
 /**
@@ -17,11 +15,8 @@ import org.slf4j.LoggerFactory;
 public class MapperServiceImpl implements MapperService {
     
     org.slf4j.Logger logger;
-    
     ModelMapper modelMapper = new ModelMapper();
 
-    @Autowired
-    private SocioService accountService;
 
     public MapperServiceImpl() {
         this.logger = LoggerFactory.getLogger(MapperServiceImpl.class);

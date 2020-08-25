@@ -12,10 +12,10 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.artsgard.socioregister.*"})
-public class SinglepageApplication implements ApplicationRunner {
+public class SocioRegisterApplication implements ApplicationRunner {
 
     public static void main(String[] args) {
-        SpringApplication.run(SinglepageApplication.class, args);
+        SpringApplication.run(SocioRegisterApplication.class, args);
     }
 
     @Override
