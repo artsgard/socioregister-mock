@@ -1,6 +1,5 @@
 package com.artsgard.socioregister.controller;
 
-import com.artsgard.socioregister.controller.SocioController;
 import com.artsgard.socioregister.mock.SocioMock;
 import com.artsgard.socioregister.DTO.SocioDTO;
 import com.artsgard.socioregister.service.MapperService;

@@ -23,14 +23,3 @@ public class SocioRegisterApplication implements ApplicationRunner {
         
     }
 }
-
-/*
-{
-        "id": 4,
-        "username": "cm",
-        "firstName": "Claudio",
-        "lastName": "Monteverdi",
-        "email": "madrigal@gmail.com",
-        "active": true 
-}
-*/
