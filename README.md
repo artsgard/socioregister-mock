@@ -17,15 +17,15 @@ From SocioRegister-jpa one finds backend-Validation (javax) and REST-Exception H
 
 Testing, in general, will have an important focus and since we are dealing with Spring(boot) there will systematically testing based on five mayor strategies:
 
--@ExtendWith(MockitoExtension.class)
+	-@ExtendWith(MockitoExtension.class)
 
--@ExtendWith(SpringExtension.class) standalone setup (two ways)
+	-@ExtendWith(SpringExtension.class) standalone setup (two ways)
 
--@ExtendWith(SpringExtension.class) server tests (@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+	-@ExtendWith(SpringExtension.class) server tests (@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 
--@DataJpaTest wich is database testing on H2
+	-@DataJpaTest wich is database testing on H2
 
--Spring Batch testing
+	-Spring Batch testing
 
 Testing is still "work in progress"
 
@@ -51,34 +51,34 @@ At the test-directory you'll find a first step of controller-testing in Spring (
 
 The Use-cases can be observed at the SocioController class. At the browser try the following urls (after running the main of SocioRegisterApplication):
 
--http://localhost:8081/socio
+	-http://localhost:8081/socio
 
--http://localhost:8081/socio/2
+	-http://localhost:8081/socio/2
 
--http://localhost:8081/socio/username/js
+	-http://localhost:8081/socio/username/js
 
 And by using Postman:
 
--post http://localhost:8081/socio  
-    {
-        "id": 4,
-        "username": "pb",
-        "firstName": "Pierre",
-        "lastName": "Boulez",
-        "email": "boulez@gmail.com",
-        "active": true 
-    } 
+	-post http://localhost:8081/socio  
+		{
+			"id": 4,
+			"username": "pb",
+			"firstName": "Pierre",
+			"lastName": "Boulez",
+			"email": "boulez@gmail.com",
+			"active": true 
+		} 
   
--put http://localhost:8081/socio/4
-    {
-        "id": 4,
-        "username": "pbxxx",
-        "firstName": "Pierre",
-        "lastName": "Boulez",
-        "email": "boulez@gmail.com",
-        "active": true 
-    } 
+	-put http://localhost:8081/socio/4
+		{
+			"id": 4,
+			"username": "pbxxx",
+			"firstName": "Pierre",
+			"lastName": "Boulez",
+			"email": "boulez@gmail.com",
+			"active": true 
+		} 
    
--delete http://localhost:8081/socio/4
+	-delete http://localhost:8081/socio/4
 
 Remember there is no DB present here, so you should have the (correct) id present at every single json object!
