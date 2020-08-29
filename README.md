@@ -53,7 +53,7 @@ I asume that you already looked into all those Spring annotations concerning the
 	
 	-(@RequestParam(value = "rows", required = false, defaultValue = "3") int rows), for obtaining the classical param values;
 	
-You should also get familiar with the typical REST-urls: (get:) /socio (get all), (get:) /socio/1 (get one with id=1), post: /socio (+ socio-json save socio), put: /socio/2 (+ socio-json update socio), delete: /socio/2 
+You should also get familiar with the typical REST-urls: (get:) /socio (get all), (get:) /socio/1 (get one with id=1), post: /socio (+ socio-json save socio), put: /socio/2 (+ socio-json update socio), delete: /socio/2 (for post, put, delete which are not get you should use Postman)
 
 The ResponseEntity class is another key element of a REST-application, you'll find it at all controller classes of the Demo. The ResponseEntity takes fully care of the controller response/ return. There are varous constructors available, one e.g. may set the (json) return object and the Http status: 
 
