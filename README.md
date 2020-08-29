@@ -40,12 +40,19 @@ Note the layers: Controller(s) (SocioController), Service(s) (SocioService, the 
 Important: 1) the DTO(s) enter and exit the controller(s) 2) they are converted into Model(s) /visa versa at the Service(s)! At SocioRegister-mock there is still no real DB but a mock which is sited at SocioRepository (here will go the Model classes of the service to enter into the DB see SocioRegister-jpa).
 
 I asume that you already looked into all those Spring annotations concerning the Controller class such as, 
+
 	-@RestController, the standard REST controller annotation;
+	
 	-@RequestMapping("/socio"), the general mapping of the complete controller class:
+	
 	-@PostMapping(produces = "application/json", consumes = "application/json"), the mapping for each methos specific, note the @Get, @Put etc. versions as well;
+	
 	-@RequestBody, entering a json object toether with consumes = "application/json";
+	
 	-path = "/{id}" and @PathVariable Long id, for obtaining ids etc;
+	
 	-(@RequestParam(value = "rows", required = false, defaultValue = "3") int rows, for obtaining the classical param values;
+	
 
 The ResponseEntity class is another key element of a REST-application, you'll find it at all controller classes of the Demo. The ResponseEntity takes fully care of the controller response/ return. There are varous constructors available, one e.g. may set the (json) return object and the Http status: 
 
