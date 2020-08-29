@@ -45,13 +45,13 @@ I asume that you already looked into all those Spring annotations concerning the
 	
 	-@RequestMapping("/socio"), the general mapping of the complete controller class:
 	
-	-@PostMapping(produces = "application/json", consumes = "application/json"), the mapping for each methos specific, note the @Get, @Put etc. versions as well;
+	-@PostMapping(produces = "application/json", consumes = "application/json"), the mapping for each specific method, note the @Get, @Put etc. versions as well;
 	
 	-@RequestBody, entering a json object toether with consumes = "application/json";
 	
 	-path = "/{id}" and @PathVariable Long id, for obtaining ids etc;
 	
-	-(@RequestParam(value = "rows", required = false, defaultValue = "3") int rows, for obtaining the classical param values;
+	-(@RequestParam(value = "rows", required = false, defaultValue = "3") int rows), for obtaining the classical param values;
 	
 
 The ResponseEntity class is another key element of a REST-application, you'll find it at all controller classes of the Demo. The ResponseEntity takes fully care of the controller response/ return. There are varous constructors available, one e.g. may set the (json) return object and the Http status: 
