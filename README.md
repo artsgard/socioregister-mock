@@ -7,7 +7,7 @@ A Springboot REST application to register and add Socios (second step with socio
 
 
 
-General Info =====================================
+## General Info ====
 
 The Socio Micro Services Project will consist of about 10 small (backend) Springboot applications, deployed in a Docker Container/ Linux Oracle Virtual Box. SocioRegister is the principal part of a series of four applications called: starter, mock, jpa, socioregister. Together they show a stepwise buildup to a Springboot REST application, which contains use-cases for registering and adding Socios (similar to Facebook). This line of applications goes from an almost empty Springboot shell (starter: one controller method only) to a small but full-fledged REST application: SocioRegister which will be used as a component of our micro-services.
 
@@ -31,7 +31,7 @@ Testing is still "work in progress"
 
 
 
-Specific Info SocioRegister-mock =====================================
+## Specific Info SocioRegister-mock ====
 
 After starter the mock application would be the next step to revise. To get familiar with any Springboot-app it is a good habit first to look into the Maven pom (Gradle file or whatever dependency-framework you use). Besides the principle spring-boot-starter-web dependency, key to a WEB/REST-application, you'll find some new ones. Lombok, automatic getters and setters at POJOs, and Modelmapper, mapping DTO´s into Entities and visa versa.
 
@@ -65,6 +65,7 @@ The annotations (@NotEmpty, @NotNull) at the SocioDTO are of the lib javax.valid
 
 At the test-directory you'll find a first step of controller-testing in Spring (MockitoExtension and see: MockMvcBuilders.standaloneSetup(socioController).build()). 
 
+### Use-cases
 The Use-cases can be observed at the SocioController class. At the browser try the following urls (after running the main of SocioRegisterApplication):
 
 	-http://localhost:8081/socio
